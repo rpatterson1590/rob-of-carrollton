@@ -8,37 +8,51 @@
 </head>
 <body>
   <div class="container">
-  <header class="banner">
-     <img src="ROB OF CARROLLTON.png" alt="Rob of Carrollton Outreach Banner">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="resources/Veteran Support.html">🎖️ Veteran Support Organizations</a>
-      <a href="resources/food.html">Food</a>
-      <a href="resources/Shelter.html">Shelter</a>
-      <a href="resources/Addiction.html">Addiction Support</a>
-      <a href="resources/Mental Health.html">Mental Health</a>
-      <a href="Legal Help.html">Legal Help</a>
-      <a href="Debt Assistance">Debt Assistance</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    <header class="banner">
+      <img src="ROB OF CARROLLTON.png" alt="Rob of Carrollton Outreach Banner">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="resources/Veteran Support.html">🎖️ Veteran Support Organizations</a>
+        <a href="resources/food.html">Food</a>
+        <a href="resources/Shelter.html">Shelter</a>
+        <a href="resources/Addiction.html">Addiction Support</a>
+        <a href="resources/Mental Health.html">Mental Health</a>
+        <a href="Legal Help.html">Legal Help</a>
+        <a href="Debt Assistance.html">Debt Assistance</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-<!-- WEATHER WIDGET START -->
-<section id="weather-widget" class="weather-widget">
-  <a 
-    class="weatherwidget-io" 
-    href="https://forecast7.com/en/33.5793n85.0761w/carrollton/" 
-    data-label_1="CARROLLTON" 
-    data-label_2="WEATHER" 
-    data-theme="pure"
-  >
- 
+    <main>
+      <!-- WEATHER WIDGET START -->
+      <section id="weather-widget" class="weather-widget">
+        <a 
+          class="weatherwidget-io" 
+          href="https://forecast7.com/en/33.5793n85.0761w/carrollton/" 
+          data-label_1="CARROLLTON" 
+          data-label_2="WEATHER" 
+          data-theme="pure"
+        >
+          CARROLLTON WEATHER
+        </a>
+        <script>
+          !function(d,s,id){
+            var js,fjs=d.getElementsByTagName(s)[0];
+            if(!d.getElementById(id)){
+              js=d.createElement(s);
+              js.id=id;
+              js.src='https://weatherwidget.io/js/widget.min.js';
+              fjs.parentNode.insertBefore(js,fjs);
+            }
+          }(document,'script','weatherwidget-io-js');
+        </script>
+      </section>
+      <!-- WEATHER WIDGET END -->
+    </main>
 
-
-
-<footer>
-    <p>&copy; 2025 Hope for Carrollton. Built with love and service.</p>
-  </footer>
-    </div>
+    <footer>
+      <p>&copy; 2025 Hope for Carrollton. Built with love and service.</p>
+    </footer>
+  </div>
 </body>
 </html>
