@@ -1,38 +1,48 @@
+/* Base styling for the entire site */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background: #f7f7f7;
   color: #333;
+  box-sizing: border-box;
 }
 
+/* Header styling */
 header {
   background: #005a87;
   color: white;
   padding: 1rem;
   text-align: center;
-
-.banner img {
-  width: auto;
-  height: auto;
-  display: block;
 }
 
+/* Responsive banner image */
+.banner img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
+/* Navigation links */
 nav a {
   color: white;
   margin: 0 10px;
   text-decoration: none;
+  display: inline-block;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
+/* Main content area */
 main {
-  padding: 2rem;
+  padding: 1.5rem;
+  width: 100%;
 }
 
+/* Footer styling */
 footer {
   background: #222;
   color: white;
@@ -40,25 +50,31 @@ footer {
   padding: 1rem;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
+/* Container to hold and center content */
 .container {
-  padding: 20px;
+  padding: 1rem;
   max-width: 100%;
   box-sizing: border-box;
 }
 
-/* Responsive text size */
+/* Responsive heading */
 h1 {
-  font-size: 6vw; /* Scales with screen width */
+  font-size: 8vw; /* Will scale nicely on smaller screens */
+  margin: 0.5rem 0;
 }
 
-/* Add responsiveness with a media query */
-@media (min-width: 768px) {
+/* Responsive tweaks for tablets and up */
+@media (min-width: 600px) {
   h1 {
-    font-size: 3rem; /* Larger screens */
+    font-size: 3rem;
+  }
+
+  main {
+    padding: 2rem 3rem;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
   }
 }
