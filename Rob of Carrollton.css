@@ -40,3 +40,25 @@ footer {
   padding: 1rem;
 }
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive text size */
+h1 {
+  font-size: 6vw; /* Scales with screen width */
+}
+
+/* Add responsiveness with a media query */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem; /* Larger screens */
+  }
+}
